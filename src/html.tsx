@@ -56,13 +56,15 @@ function Html() {
       requestAnimationFrame(frame);
     }
   };
-
+useEffect(()=>{
+  handleClick();
+},[])
   return (
     <>
       <div className="sound">
         {!active && (
           <span className="tips">
-            Turn on the Radio
+            音楽を
             <img src={arrowIcon} className="icon" alt="" />
           </span>
         )}
@@ -80,27 +82,21 @@ function Html() {
       />
 
       <div className="content">
-        <div className="title">merry christmas</div>
+      <div className="title">米酱！！</div>
+        <div className="title">メリークリスマス！！！</div>
 
         <div className="other">
           Music by
           <a href="https://pixabay.com/users/grand_project-19033897/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=126685">
-            Grand_Project
-          </a>
-          from
-          <a href="https://pixabay.com/music//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=126685">
-            Pixabay
-          </a>
-        </div>
-        <div className="other">
-          Inspired by the work of
-          <a href="https://dribbble.com/shots/20149802-Happy-Holidays-3D-animation">
-            Aleksander Buksza
+            Justin Biber!
           </a>
         </div>
 
         <div className="other">
-          Made with <span>💗</span> by DeadRabbit
+          Made with <span>💗</span> by エリン！
+        </div>
+        <div className="other">
+          Do you think of me?
         </div>
       </div>
     </>
